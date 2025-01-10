@@ -1,0 +1,17 @@
+:keyword
+    space=/[\s\n]+/
+    operator=/[+\-*\/=!]+/
+    number=/[0-9\.]+/
+    word=/[^\s\n+\-*\/=!]+/
+
+    $ =>
+    {
+        let type = Object.keys( $ )[0];
+
+        return type === 'space' ? $[type] : '<span class="' + type + '">' + $[type] + '</span>';
+    }
+
+:main
+    keywords=...:keyword
+
+    $ => $.keywords.join('');

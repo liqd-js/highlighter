@@ -1,0 +1,35 @@
+{
+  "name": "@liqd-js/highlighter",
+  "description": "Syntax Highlighting Library",
+  "version": "0.0.1",
+  "author": "radixxko",
+  "license": "MIT",
+  "main": "lib/highlighter.js",
+  "homepage": "https://liqd-js.com/lib/highlighter",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/liqd-js/highlighter.git"
+  },
+  "keywords": [
+    "highlighter",
+    "highligh",
+    "syntax",
+    "liqd-js",
+    "liqd"
+  ],
+  "dependencies": {
+    "@liqd-js/parser": "0.0.4"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.4",
+    "mocha": "^5.0.4",
+    "nyc": "^14.1.1"
+  }
+}
